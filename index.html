@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armand's Portfolio</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Hi, I'm Armand</h1>
         <p>Future Software Developer | Coding Enthusiast</p>
@@ -17,26 +19,36 @@
         </nav>
     </header>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>I’m a passionate coder learning web development. I enjoy creating interactive websites and software applications.</p>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>My Work</h2>
         <div class="video-container">
+            <!-- Video file renamed for simplicity -->
             <video controls width="600">
-                <source src="sample-video.mp4" type="video/mp4">
+                <source src="videos/sample-video.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <button id="alertBtn">Click me</button>
     </section>
 
-    <script src="script.js"></script>
+    <!-- JS -->
+    <script>
+        // Button functionality
+        document.getElementById('alertBtn').addEventListener('click', () => {
+            alert('Thanks for clicking! You can contact me via email or LinkedIn.');
+        });
+    </script>
 </body>
 </html>
