@@ -5,14 +5,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #2cff02;
+    color: #00ff0dcc;
 
     /* GIF Background */
     background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2swdTFud3VuZnptZHRmeXNtN3lmMWt1OW03bzk3cTlxMHMwdzJ5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4knozU8q9AXvpod9qy/giphy.gif');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;       /* Cover entire screen */
-    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;       
+    background-attachment: fixed;
 }
 
 /* Dark overlay for readability */
@@ -29,8 +29,8 @@ body::before {
    Header
 ================================= */
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent gray */
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ff40;
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
@@ -44,15 +44,14 @@ header {
 nav a:link,
 nav a:visited,
 nav a:active {
-    color: #ff00f2;       /* Pink links by default */
+    color: #ff00f2;       
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Glowing hover effect for nav links */
 nav a:hover {
-    color: #00ff40; /* Light green glow */
+    color: #00ff40; 
     text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 15px #ffffff;
 }
 
@@ -63,7 +62,7 @@ nav a:hover {
 .section-link:visited,
 .section-link:active {
     color: #ffd700; /* Gold for section links */
-    text-decoration: underline; /* Optional to show clickable */
+    text-decoration: underline;
     transition: all 0.3s ease;
 }
 
@@ -78,7 +77,7 @@ nav a:hover {
 section {
     padding: 2rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 1rem auto;
     border-radius: 10px;
     max-width: 900px;
@@ -103,11 +102,45 @@ button:hover {
 }
 
 /* ================================
+   Project / Contact Cards
+================================= */
+.project-card,
+.contact-card {
+    background-color: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1rem auto;
+}
+
+.project-card:hover,
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.contact-card a {
+    color: #ff00f2; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.contact-card a:hover {
+    color: #00ff40; 
+    text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 15px #ffffff;
+}
+
+/* ================================
    Responsive Styles
 ================================= */
 @media only screen and (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Fixed can break on mobile */
+        background-attachment: scroll;
     }
     header, section {
         padding: 1rem;
@@ -118,5 +151,9 @@ button:hover {
     nav a {
         display: block;
         margin: 0.5rem 0;
+    }
+    .project-card,
+    .contact-card {
+        width: 90%;
     }
 }
