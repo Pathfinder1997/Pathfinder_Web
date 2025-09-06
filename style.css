@@ -44,16 +44,32 @@ header {
 nav a:link,
 nav a:visited,
 nav a:active {
-    color: #ffffff;       /* White links by default */
+    color: #ff00f2;       /* Pink links by default */
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Glowing purple hover effect */
+/* Glowing hover effect for nav links */
 nav a:hover {
-    color: #b19cd9; /* Light purple */
-    text-shadow: 0 0 5px #ea00ff, 0 0 10px #ff00f2, 0 0 15px #000000;
+    color: #00ff40; /* Light green glow */
+    text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 15px #ffffff;
+}
+
+/* ================================
+   Section Links (Read More / See Skills)
+================================= */
+.section-link:link,
+.section-link:visited,
+.section-link:active {
+    color: #ffd700; /* Gold for section links */
+    text-decoration: underline; /* Optional to show clickable */
+    transition: all 0.3s ease;
+}
+
+.section-link:hover {
+    color: #ff69b4; /* Hot pink on hover */
+    text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
 }
 
 /* ================================
