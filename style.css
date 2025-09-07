@@ -5,10 +5,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #00ff0dcc;
+    color: #fffffffb;
 
     /* GIF Background */
-    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2swdTFud3VuZnptZHRmeXNtN3lmMWt1OW03bzk3cTlxMHMwdzJ5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4knozU8q9AXvpod9qy/giphy.gif');
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTIxazBvYzBtdTE5NjN6enM0bjdmcXY2YW95N2NpbjFwYTllb290ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r9bafMLWncRVcSP1JQ/giphy.gif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;       
@@ -30,7 +30,7 @@ body::before {
 ================================= */
 header {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #00ff40;
+    color: #ffffff;
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
@@ -44,14 +44,14 @@ header {
 nav a:link,
 nav a:visited,
 nav a:active {
-    color: #ff00f2;       
+    color: #fcfcfc;       
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #00ff40; 
+    color: #1eff00; 
     text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 15px #ffffff;
 }
 
@@ -90,7 +90,7 @@ button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    background-color: rgba(94,94,94,0.8);
+    background-color: rgba(255, 254, 254, 0);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -98,7 +98,7 @@ button {
 }
 
 button:hover {
-    background-color: #777777;
+    background-color: #00ff00;
 }
 
 /* ================================
@@ -112,7 +112,7 @@ button:hover {
     width: 300px;
     text-align: center;
     color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 255, 42, 0.719);
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 1rem auto;
 }
