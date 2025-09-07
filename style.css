@@ -7,8 +7,8 @@ body {
     padding: 0;
     color: #fffffffb;
 
-    /* GIF Background */
-    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTIxazBvYzBtdTE5NjN6enM0bjdmcXY2YW95N2NpbjFwYTllb290ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r9bafMLWncRVcSP1JQ/giphy.gif');
+    /* GIF Background (local file in images folder) */
+    background-image: url('images/mygif.gif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;       
@@ -22,7 +22,7 @@ body::before {
     top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0,0,0,0.4);
-    z-index: -1;
+    z-index: 0; /* changed from -1 to avoid stacking issues */
 }
 
 /* ================================
