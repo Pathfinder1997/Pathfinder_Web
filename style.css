@@ -9,10 +9,11 @@ body {
     text-align: center;
 
     /* Updated GIF Background */
+    background-color: #000; /* fallback behind GIF */
     background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI0ZGx5cnpmMHFmZ3pzYWRicHFveTd6bjZpMXM4ODRjdTF2MmlmOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ML15sUZFNyMy0Yv55m/giphy.gif');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain; /* fit GIF fully */
     background-attachment: fixed;
     position: relative;
     z-index: 0;
@@ -157,7 +158,8 @@ button:hover {
 ================================= */
 @media only screen and (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Better performance on phones */
+        background-attachment: scroll; /* better performance on phones */
+        background-size: contain;      /* fit GIF fully on smaller screens */
     }
     header, section {
         padding: 1rem;
