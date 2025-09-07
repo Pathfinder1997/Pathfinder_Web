@@ -7,8 +7,8 @@ body {
     padding: 0;
     color: #fffffffb;
 
-    /* GIF Background from Giphy URL */
-    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjR2dDk3YzA0MHA3ZDlyYnA0MWlyMDV3eDkyNDk3OHpnZ2tkeGNjdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PTBVMsYIOB0SBP4MVe/giphy.gif');
+    /* Updated GIF Background */
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI0ZGx5cnpmMHFmZ3pzYWRicHFveTd6bjZpMXM4ODRjdTF2MmlmOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ML15sUZFNyMy0Yv55m/giphy.gif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -156,7 +156,7 @@ button:hover {
 ================================= */
 @media only screen and (max-width: 768px) {
     body {
-        background-attachment: scroll;
+        background-attachment: scroll; /* Better performance on phones */
     }
     header, section {
         padding: 1rem;
