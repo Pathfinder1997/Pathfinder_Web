@@ -1,4 +1,4 @@
-/* ================================
+please keepmallmy stuff in this code but help me with the photo i added the adress but it doesnt want to shows on my website /* ================================
    General Body Styles
 ================================= */
 body {
@@ -8,9 +8,9 @@ body {
     color: #fffffffb;
     text-align: center;
 
-    /* Updated GIF Background */
-    background-color: #000; /* fallback behind GIF */
-    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI0ZGx5cnpmMHFmZ3pzYWRicHFveTd6bjZpMXM4ODRjdTF2MmlmOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ML15sUZFNyMy0Yv55m/giphy.gif');
+    
+    background-color: #000000;
+    background-image: url('https://unsplash.com/photos/man-in-blue-suit-jacket-and-white-dress-shirt-hDANeGXvWRw');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* full coverage */
